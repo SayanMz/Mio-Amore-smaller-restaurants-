@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cake_pic"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--name field-->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Name"
+        android:inputType="textCapSentences"
+        android:textColor="@color/black"
+        android:textColorHint="#666600" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--cupcake section-->
+        <LinearLayout
+            style="@style/headerParent">
+
+            <TextView
+                style="@style/header"
+                android:text="CUPCAKES" />
+<!--Lemon cake-->
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:text="Lemon Cake"
+                style="@style/checkBox"/>
+<!--Vanilla cake-->
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:text="Vanilla Cake"
+                style="@style/checkBox"/>
+<!--Chocolate cake-->
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:text="Chocolate Cake"
+                style="@style/checkBox" />
+<!--Birthday cake-->
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:text="Birthday Cake"
+                style="@style/checkBox" />
+
+        </LinearLayout>
+<!--quantity section-->
+        <LinearLayout
+            style="@style/headerParent"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                style="@style/header"
+                android:text="QUANTITY" />
+<!--quantity 1-->
+            <LinearLayout
+                style="@style/buttonParent">
+
+                <Button
+                    style="@style/button"
+                    android:onClick="decrementLC"
+                    android:text="-"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <TextView
+                    android:id="@+id/quantityLC"
+                    style="@style/quantityText" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="incrementLC"
+                    android:text="+"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+<!--quantity 2-->
+            <LinearLayout
+                style="@style/buttonParent">
+
+                <Button
+                    style="@style/button"
+                    android:onClick="decrementVC"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantityVC"
+                    style="@style/quantityText" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="incrementVC"
+                    android:text="+" />
+
+            </LinearLayout>
+<!--quantity 3-->
+            <LinearLayout
+                style="@style/buttonParent">
+
+                <Button
+                    style="@style/button"
+                    android:onClick="decrementCC"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantityCC"
+                    style="@style/quantityText" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="incrementCC"
+                    android:text="+" />
+
+            </LinearLayout>
+<!--quantity 4-->
+            <LinearLayout
+                style="@style/buttonParent">
+
+                <Button
+                    style="@style/button"
+                    android:onClick="decrementBC"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantityBC"
+                    style="@style/quantityText" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="incrementBC"
+                    android:text="+" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/header"
+        android:text="ORDER SUMMARY" />
+
+    <TextView
+        android:id="@+id/orderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="₹0"
+        android:textColor="#03A9F4"
+        android:textSize="20sp" />
+<!--Order summary-->
+    <Button
+        android:id="@+id/button"
+        android:onClick="submitOrder"
+        android:text="ORDER SUMMARY"
+        style="@style/orderButtons"/>
+<!--Order intent-->
+    <Button
+        android:id="@+id/button2"
+        android:onClick="orderNow"
+        android:text="ORDER NOW"
+        style="@style/orderButtons"/>
+
+</LinearLayout>

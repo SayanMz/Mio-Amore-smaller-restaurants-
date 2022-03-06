@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--application theme-->
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+    <item name="colorPrimary">#FF9800</item>
+    <item name="android:colorPrimaryDark">#FFC107</item>
+    <item name="colorAccent">#964B00</item>
+</style>
+<!--cake names-->
+<style name="checkBox" >
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_marginLeft">16dp</item>
+<item name="android:paddingLeft">18dp</item>
+<item name="android:layout_marginTop">15dp</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:textSize">16sp</item>
+</style>
+<!--textview cupcake & quantity-->
+<style name="header" >
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_marginLeft">16dp</item>
+<item name="android:layout_marginTop">16dp</item>
+<item name="android:textColor">#964B00</item>
+</style>
+<!--parent horizontal layout which has 2 vertical layouts-->
+<style name="headerParent" >
+<item name="android:layout_width">0dp</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:layout_weight">1</item>
+<item name="android:orientation">vertical</item>
+</style>
+<!--quantity button's parent-->
+<style name="buttonParent" >
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_marginLeft">16dp</item>
+<item name="android:orientation">horizontal</item>
+</style>
+<!--quantity buttons-->
+<style name="button" >
+<item name="android:textColor">#6D4C41</item>
+<item name="android:layout_height">48dp</item>
+<item name="android:layout_width">48dp</item>
+<item name="backgroundTint">#FFC000</item>
+</style>
+<!--quantity values-->
+<style name="quantityText" >
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_marginLeft">8dp</item>
+<item name="android:layout_marginRight">8dp</item>
+<item name="android:text">0</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:textSize">20sp</item>
+</style>
+<!--order section-->
+<style name="orderButtons" >
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_marginStart">16dp</item>
+<item name="backgroundTint">#D3D3D3</item>
+<item name="android:textColor">@color/black</item>
+</style>
+
+</resources>
